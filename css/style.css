@@ -18,8 +18,8 @@
   --wm-ratio: 11 / 1; /* shape of the wordmark symbol: width / height. Change it when the real group logo replaces the symbol */
   --ease: cubic-bezier(.22, .8, .2, 1);
   --bar-h: 76px;
-  --z-bar: 50;
-  --z-menu: 70;
+  --z-bar: 95;
+  --z-menu: 96;
   --z-grain: 90;
   /* an eased fade (smootherstep) for the edges of full-bleed photographs: no visible start line */
   --melt: linear-gradient(180deg,
@@ -65,8 +65,8 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 /* ------------------------------------------------------------------ grain */
 .grain {
   position: fixed; inset: 0; z-index: var(--z-grain); pointer-events: none;
-  background: url(../img/grain.png) 0 0 / 190px 190px repeat;
-  opacity: .28;
+  background: url(../img/grain.png) 0 0 / 128px 128px repeat;
+  opacity: .09;
 }
 
 /* ------------------------------------------------------------------ top bar: clear at the top, hides on the way down, glass on the way up */
@@ -111,9 +111,10 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 @media (max-width: 899px) {
   :root { --bar-h: 64px; }
   .bar__l, .bar__r { display: none; }
-  .bar__wm { grid-column: 2; width: 190px; }
+  .bar { grid-template-columns: minmax(0,1fr) auto; }
+  .bar__wm { grid-column: 1; justify-self: start; width: 150px; }
   .bar__menu {
-    grid-column: 3; justify-self: end; display: inline-flex; align-items: center; gap: 12px;
+    grid-column: 2; justify-self: end; display: inline-flex; align-items: center; gap: 12px;
     min-height: 44px; padding: 0 2px 0 10px; font-weight: 500; font-size: 14px; letter-spacing: .05em;
   }
   .bar__menu-i { position: relative; width: 22px; height: 9px; }
@@ -420,3 +421,6 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .rv { opacity: 1; transform: none; }
 }
+
+/* photographs sit above the page grain */
+.card, .slot { z-index: 91; }
