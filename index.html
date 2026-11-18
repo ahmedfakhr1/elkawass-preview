@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Elkawass Group | Hospitality, Cairo</title>
+<meta name="description" content="Elkawass Group, hospitality in Cairo. Charlie's and Tokyo, two restaurants at 13 El Thawra St, Korba, Heliopolis.">
+<meta name="theme-color" content="#0E0F12">
+<meta property="og:title" content="Elkawass Group">
+<meta property="og:description" content="Hospitality, Cairo.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/bodoni-moda-25f68c.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bodoni-moda-aad168.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-66cfc0.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/amiri-ar.woff2" as="font" type="font/woff2" crossorigin>
+<style>html.fl body{opacity:0}body{transition:opacity .25s ease}</style>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js', 'fl');
+  var done = false;
+  function go() { if (done) return; done = true; d.classList.remove('fl'); }
+  setTimeout(go, 1200);
+  if (document.fonts && document.fonts.load) {
+    Promise.all([
+      document.fonts.load('400 24px "Bodoni Moda"'),
+      document.fonts.load('italic 400 24px "Bodoni Moda"'),
+      document.fonts.load('300 16px "Manrope"'),
+      document.fonts.load('500 16px "Manrope"')
+    ]).then(go, go);
+  } else { go(); }
+})();
+</script>
+<link rel="stylesheet" href="fonts.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=1">
+<script src="js/site.js?v=1" defer></script>
+</head>
+<body>
+
+<!-- Temporary group wordmark: it lives only in this one symbol. When the real group logo arrives,
+     replace the <symbol> below with the logo (keep id="wordmark" and a viewBox that matches its shape).
+     See README.md. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="wordmark" viewBox="0 0 330 30">
+    <text x="0" y="23" font-family="'Bodoni Moda', 'Didot', Georgia, serif" font-size="24" font-weight="400" fill="currentColor" textLength="330" lengthAdjust="spacing">ELKAWASS GROUP</text>
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" id="bar">
+  <nav class="bar__nav" aria-label="Main">
+    <div class="bar__l">
+      <a href="#restaurants">Restaurants</a>
+      <a href="#founder">Founder</a>
+    </div>
+    <a class="bar__wm" href="#top" aria-label="Elkawass Group, back to the top">
+      <svg class="wm" aria-hidden="true" focusable="false"><use href="#wordmark"/></svg>
+    </a>
+    <div class="bar__r">
+      <a href="#contact">Contact</a>
+      <button class="ar-btn ar-btn--bar" type="button" data-ar lang="ar" dir="rtl">العربية</button>
+    </div>
+  </nav>
+  <button class="bar__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">
+    <span class="bar__menu-t">Menu</span><span class="bar__menu-i" aria-hidden="true"></span>
+  </button>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" inert>
+  <button class="menu__close" id="menuClose" type="button">Close</button>
+  <nav class="menu__nav" aria-label="Menu">
+    <a href="#restaurants">Restaurants</a>
+    <a href="#founder">Founder</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <button class="ar-btn" type="button" data-ar lang="ar" dir="rtl">العربية</button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- 1. The house, alone -->
+  <section class="hero" id="top" aria-label="Elkawass Group">
+    <div class="hero__field" aria-hidden="true">
+      <i class="hero__l hero__l--a"></i><i class="hero__l hero__l--b"></i><i class="hero__l hero__l--c"></i><i class="hero__glow"></i>
+    </div>
+    <!-- HERO MEDIA SLOT. Save a photograph as img/hero.webp (2880 x 1800) and it fills the screen behind the wordmark.
+         For a muted looping film instead, add this line inside the div and save the files as img/hero.mp4 (and img/hero.webm):
+         <video autoplay muted loop playsinline preload="metadata" poster="img/hero.webp"><source src="img/hero.webm" type="video/webm"><source src="img/hero.mp4" type="video/mp4"></video>
+         See README.md. -->
+    <div class="hero__media" data-slot aria-hidden="true">
+      <img src="img/hero.webp" alt="" width="2880" height="1800" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__in">
+      <h1 class="hero__name"><span class="sr-only">Elkawass Group</span><svg class="wm" aria-hidden="true" focusable="false"><use href="#wordmark"/></svg></h1>
+      <p class="hero__line">Hospitality, Cairo</p>
+    </div>
+    <a class="hero__cue" href="#statement" aria-label="Scroll to the next section"><i></i></a>
+  </section>
+
+  <!-- 2. Statement (draft copy, owner to approve) -->
+  <section class="statement" id="statement">
+    <h2 class="statement__h rv">Rooms worth returning to.</h2>
+    <p class="statement__p rv">Two restaurants, one address in Korba.</p>
+  </section>
+
+  <!-- 3. Full-bleed image band: service in motion -->
+  <section class="bandwrap" aria-label="Service in motion">
+    <div class="slot slot--band" data-slot>
+      <img src="img/service-in-motion.webp" alt="" width="3000" height="1700" loading="lazy" decoding="async">
+      <span class="slot__label">IMAGE · SERVICE IN MOTION · 3000×1700</span>
+    </div>
+  </section>
+
+  <!-- 4. Our restaurants -->
+  <section class="rest" id="restaurants">
+    <h2 class="rest__h rv">Our restaurants</h2>
+    <ul class="rest__grid">
+      <li class="rv">
+        <a class="card card--c" href="https://ahmedfakhr1.github.io/charlies-preview/" target="_blank" rel="noopener">
+          <span class="card__media"><img src="img/restaurant-charlies.webp" alt="" width="1000" height="1319" loading="lazy" decoding="async"></span>
+          <span class="card__body">
+            <img class="card__logo" src="img/charlies-cream.svg" alt="Charlie's" width="508" height="110" loading="lazy" decoding="async">
+            <span class="card__line">Inspired by an era of elegance and ease.</span>
+            <span class="card__go">Visit<span class="sr-only"> Charlie's (opens in a new tab)</span></span>
+          </span>
+        </a>
+      </li>
+      <li class="rv">
+        <a class="card card--t" href="https://ahmedfakhr1.github.io/tokyo-preview/" target="_blank" rel="noopener">
+          <span class="card__media"><img src="img/restaurant-tokyo.webp" alt="" width="1000" height="1319" loading="lazy" decoding="async"></span>
+          <span class="card__body">
+            <img class="card__logo" src="img/tokyo-gold.svg" alt="Tokyo" width="600" height="221" loading="lazy" decoding="async">
+            <span class="card__line">A marriage of two cultures; a tale of two homes.</span>
+            <span class="card__go">Visit<span class="sr-only"> Tokyo (opens in a new tab)</span></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 5. Founder.
+       SWAP: save the portrait as img/founder-portrait.webp (1200 x 1500, vertical) and it fills the frame, the label goes by itself.
+       Replace the two marked slots below with the founder's own words:
+       <h2 class="founder__name">Name</h2>  and  <p class="founder__note">The note</p>
+       No name or quote is invented. See README.md. -->
+  <section class="founder" id="founder">
+    <div class="slot slot--portrait rv" data-slot>
+      <img src="img/founder-portrait.webp" alt="" width="1200" height="1500" loading="lazy" decoding="async">
+      <span class="slot__label">IMAGE · FOUNDER PORTRAIT · 1200×1500</span>
+    </div>
+    <h2 class="tslot rv"><span>Founder's name</span></h2>
+    <p class="tslot tslot--note rv"><span>A note from the founder</span></p>
+  </section>
+
+  <!-- 6. Details: three equal vertical slots -->
+  <section class="details" aria-label="Details">
+    <h2 class="sr-only">Details</h2>
+    <ul class="details__row">
+      <li class="slot slot--tall rv" data-slot>
+        <img src="img/detail-glassware.webp" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+        <span class="slot__label">IMAGE · GLASSWARE · 1200×1600</span>
+      </li>
+      <li class="slot slot--tall rv" data-slot>
+        <img src="img/detail-linen.webp" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+        <span class="slot__label">IMAGE · LINEN · 1200×1600</span>
+      </li>
+      <li class="slot slot--tall rv" data-slot>
+        <img src="img/detail-hands.webp" alt="" width="1200" height="1600" loading="lazy" decoding="async">
+        <span class="slot__label">IMAGE · HANDS · 1200×1600</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 7. Get in touch -->
+  <section class="contact" id="contact">
+    <h2 class="contact__h rv">Get in touch</h2>
+    <p class="contact__addr rv"><a href="https://www.google.com/maps/search/?api=1&amp;query=13+El+Thawra+St+Korba+Heliopolis+Cairo" target="_blank" rel="noopener">13 El Thawra St, Korba, Heliopolis, Cairo<span class="sr-only"> (opens in a new tab)</span></a></p>
+    <p class="tslot tslot--small rv"><span>Group email to come</span></p>
+    <ul class="contact__tel rv">
+      <li><a href="tel:+201552735204"><span>Charlie's</span>015 52735204</a></li>
+      <li><a href="tel:+201555836617"><span>Tokyo</span>015 55836617</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__in">
+    <a class="foot__wm" href="#top" aria-label="Elkawass Group, back to the top">
+      <svg class="wm" aria-hidden="true" focusable="false"><use href="#wordmark"/></svg>
+    </a>
+    <ul class="foot__links">
+      <li><a href="https://ahmedfakhr1.github.io/charlies-preview/" target="_blank" rel="noopener">Charlie's<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <li><a href="https://ahmedfakhr1.github.io/tokyo-preview/" target="_blank" rel="noopener">Tokyo<span class="sr-only"> (opens in a new tab)</span></a></li>
+    </ul>
+    <button class="ar-btn" type="button" data-ar lang="ar" dir="rtl">العربية</button>
+  </div>
+</footer>
+
+<dialog class="ar" id="ar" aria-labelledby="arT">
+  <div class="ar__card">
+    <p class="ar__w" lang="ar" dir="rtl" aria-hidden="true">العربية</p>
+    <p class="ar__t" id="arT">Arabic is not in this preview, it will be live in the final version.</p>
+    <button class="ar__x" type="button" data-close>Close</button>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+</body>
+</html>
