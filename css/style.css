@@ -424,3 +424,7 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 
 /* photographs sit above the page grain */
 .card, .slot { z-index: 91; }
+
+/* phone menu: icon only (label kept for screen readers) */
+.bar__menu-t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 899px) { .bar__menu { min-width: 44px; justify-content: center; padding: 0; } .bar__menu-i { width: 24px; } }
