@@ -428,3 +428,13 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 /* phone menu: icon only (label kept for screen readers) */
 .bar__menu-t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 899px) { .bar__menu { min-width: 44px; justify-content: center; padding: 0; } .bar__menu-i { width: 24px; } }
+
+/* ------------------------------------------------------------------ calm background (Ahmed 21 Nov): one even near-black, no moving or patchy light */
+.hero__l, .hero__glow { display: none; }
+.hero__field::before { display: none; }
+.hero { background: linear-gradient(180deg, #131418 0%, #0F1013 55%, var(--ink) 100%); }
+.statement, .founder, .menu { background: var(--ink); }
+.slot { background: linear-gradient(180deg, #16171B 0%, #121316 100%); }
+.slot::before { display: none; }
+.contact { background: linear-gradient(180deg, var(--ink), #0B0C0F); }
+.foot { background: #0B0C0F; }
