@@ -438,3 +438,14 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 .slot::before { display: none; }
 .contact { background: linear-gradient(180deg, var(--ink), #0B0C0F); }
 .foot { background: #0B0C0F; }
+
+/* ------------------------------------------------------------------ one light break (Ahmed 24 Nov): the statement on warm bone, soft fades in and out */
+.statement {
+  background: linear-gradient(180deg, rgb(14,15,18) 0%, rgb(18,18,21) 3%, rgb(37,37,39) 6%, rgb(76,75,74) 9%, rgb(126,124,120) 12%, rgb(176,172,165) 15%, rgb(215,210,200) 18%, rgb(234,229,218) 21%, rgb(238,232,221) 24%, rgb(238,232,221) 76%, rgb(234,229,218) 79%, rgb(215,210,200) 82%, rgb(176,172,165) 85%, rgb(126,124,120) 88%, rgb(76,75,74) 91%, rgb(37,37,39) 94%, rgb(18,18,21) 97%, rgb(14,15,18) 100%);
+  color: #17181B;
+}
+.statement__h { color: #17181B; }
+.statement__p { color: #5A564F; }
+.bar.on-light.is-glass { background: rgba(238, 232, 221, .62); color: #17181B; border-bottom-color: rgba(23, 24, 27, .12); }
+.bar.on-light:not(.is-glass) { color: #17181B; }
+.bar.on-light .ar-btn--bar { color: #17181B; }

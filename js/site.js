@@ -124,3 +124,16 @@
   });
   window.addEventListener('resize', function () { if (menuOpen && window.innerWidth >= 900) setMenu(false); });
 })();
+
+/* top bar turns light over the light statement section */
+(function () {
+  var bar = document.querySelector('.bar'), light = document.querySelector('.statement');
+  if (!bar || !light) return;
+  function tone() {
+    var r = light.getBoundingClientRect(), h = bar.offsetHeight / 2, span = r.height * 0.22;
+    bar.classList.toggle('on-light', r.top + span < h && r.bottom - span > h);
+  }
+  window.addEventListener('scroll', tone, { passive: true });
+  window.addEventListener('resize', tone);
+  tone();
+})();
