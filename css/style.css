@@ -449,3 +449,8 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 .bar.on-light.is-glass { background: rgba(238, 232, 221, .62); color: #17181B; border-bottom-color: rgba(23, 24, 27, .12); }
 .bar.on-light:not(.is-glass) { color: #17181B; }
 .bar.on-light .ar-btn--bar { color: #17181B; }
+
+/* compact statement (Ahmed 24 Nov: too few words for a huge section) */
+.statement { padding: clamp(84px, 9vw, 140px) var(--g) clamp(80px, 8.5vw, 130px); }
+.statement__h { font-size: clamp(34px, 4.4vw, 64px); max-width: 16ch; line-height: 1.08; }
+.statement__p { margin-top: clamp(16px, 1.6vw, 24px); }
