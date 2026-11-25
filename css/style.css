@@ -454,3 +454,8 @@ h1, h2 { font-weight: 400; text-wrap: balance; }
 .statement { padding: clamp(84px, 9vw, 140px) var(--g) clamp(80px, 8.5vw, 130px); }
 .statement__h { font-size: clamp(34px, 4.4vw, 64px); max-width: 16ch; line-height: 1.08; }
 .statement__p { margin-top: clamp(16px, 1.6vw, 24px); }
+/* crisp edges, no gradient (Ahmed 24 Nov) */
+.statement { background: var(--bone); }
+/* inset light panel, dark margins, aligned with the restaurant cards (Ahmed picked D, 25 Nov) */
+.statement { background: var(--ink); isolation: isolate; }
+.statement::before { content: ''; position: absolute; z-index: -1; top: 0; bottom: 0; left: max(var(--g), calc((100% - 1240px) / 2)); right: max(var(--g), calc((100% - 1240px) / 2)); background: var(--bone); }
